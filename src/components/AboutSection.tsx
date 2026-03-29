@@ -22,7 +22,7 @@ const AboutSection = () => {
           <p className="text-muted-foreground font-body leading-relaxed">
             With years of experience in wedding, portrait, event, and model photography,
             I bring a blend of artistic vision and technical expertise to every shoot.
-            At 3rd Eye Studio, we go beyond just taking photos — we create memories that last forever.
+            At Studio 3rd Eye, we go beyond just taking photos — we create memories that last forever.
           </p>
         </motion.div>
       </div>

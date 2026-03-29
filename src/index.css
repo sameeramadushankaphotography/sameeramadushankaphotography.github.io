@@ -71,11 +71,76 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background-size: 200% auto;
+    animation: shimmer 3s ease-in-out infinite;
   }
+
+  @keyframes shimmer {
+    0%, 100% { background-position: 0% center; }
+    50% { background-position: 100% center; }
+  }
+
   .border-gold-subtle {
     border-color: hsl(38 80% 55% / 0.2);
   }
+
   .bg-gold-subtle {
     background-color: hsl(38 80% 55% / 0.05);
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 20px hsl(38 80% 55% / 0.3),
+                0 0 40px hsl(38 80% 55% / 0.2),
+                0 0 60px hsl(38 80% 55% / 0.1);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px hsl(38 80% 55% / 0.5),
+                 0 0 20px hsl(38 80% 55% / 0.3),
+                 0 0 30px hsl(38 80% 55% / 0.2);
+  }
+
+  .glass {
+    background: hsl(20 14% 4% / 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(38 80% 55% / 0.1);
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px hsl(0 0% 0% / 0.3);
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(20 14% 4%);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(38 80% 55% / 0.5);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(38 80% 55% / 0.7);
+  }
+
+  /* Selection color */
+  ::selection {
+    background: hsl(38 80% 55% / 0.3);
+    color: hsl(40 20% 92%);
   }
 }

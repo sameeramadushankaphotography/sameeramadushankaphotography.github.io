@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="py-12 px-4 border-t border-border">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="3rd Eye Studio" className="h-8 w-8" />
+          <img src={logo} alt="Studio 3rd Eye" className="h-8 w-18" />
           <span className="font-heading text-sm text-muted-foreground">
             © {new Date().getFullYear()} Sameera Madushanka Photography
           </span>
